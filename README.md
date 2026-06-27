@@ -1,5 +1,4 @@
 # wsc26-periodic
-Supplement for WSC'2026 paper "Should we Always Scramble Digital Nets for Quasi-Monte Carlo?"
 
 This repository is a companion to the paper 
 * P. L'Ecuyer and C. Lemieux, ``Should we Always Scramble Digital Nets for Quasi-Monte Carlo?,'' Proceedings of the 2026 Winter Simulation Conference, IEEE Press, 2026, to appear. See [wsc26periodic.pdf](https://www-labs.iro.umontreal.ca/~lecuyer/myftp/papers/wsc26periodic.pdf)
