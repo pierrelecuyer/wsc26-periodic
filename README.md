@@ -5,7 +5,6 @@ This repository is a companion to the paper
 
 It contains an Online Supplement for the paper that provides the proof of Proposition 2 and additional figures, links to the Java code and tools used to make the experiments, and the output data files.   
 
- 
 Our experiment had two stages. In the first stage, for each of the $6\times 5\times 5\times 4 = 600$ combination of ($f$, method, $k$, $d$), 
 we generated a pool of $N = 10,000$ independent realizations $y_1, \ldots, y_N$ of the RQMC estimator and stored the sorted values in files.
 We did this in Java by using the packages `hups` and `mcqmctools` from the 
