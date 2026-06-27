@@ -3,15 +3,10 @@
 This repository is a companion to the paper 
 * P. L'Ecuyer and C. Lemieux, ``Should we Always Scramble Digital Nets for Quasi-Monte Carlo?,'' Proceedings of the 2026 Winter Simulation Conference, IEEE Press, 2026, to appear. See [wsc26periodic.pdf](https://www-labs.iro.umontreal.ca/~lecuyer/myftp/papers/wsc26periodic.pdf)
 
-The aim of that paper is to compare empirically various Randomized quasi-Monte Carlo (RQMC) estimators of the integral of a function $f$ in terms of their variance. For this, we selected 10 functions $f$, each one in $s = 1, 2, 4, 8, 16$ dimensions, and tried RQMC point sets with $n=2^k$ points for $k=8,9,\dots,18$. For each $f$ and $s$, we applied each RQMC method 1000 times for each $k$, and computed the empirical mean, variance, and excess kurtosis.  
+The aim of that paper is to compare empirically various Randomized quasi-Monte Carlo (RQMC) estimators of the integral of a function $f$ in terms of their variance. For this, we selected 10 functions $f$, each one in $s = 1, 2, 4, 8, 16$ dimensions, and tried RQMC point sets with $n=2^k$ points for $k=8,9,\dots,18$. For each $f$ and $s$, we applied each RQMC method 1000 times for each $k$, computed the empirical mean, variance, and excess kurtosis, and put these values in three data file. We then used these files to make plots of the log-variance as a function of $k$ for the different methods, for each $f$ and $s$.  
 
-numbers of dimensions $s$, and 11 values 
+The present repository contains an Online Supplement for the paper that provides the proof of Proposition 2 and the variance plots, links to the Java code and tools used to make the experiments, and the output data files.   
 
-It contains an Online Supplement for the paper that provides the proof of Proposition 2 and additional figures, links to the Java code and tools used to make the experiments, and the output data files.   
- values oi
-
-Our experiment had two stages. In the first stage, for each of the $6\times 5\times 5\times 4 = 600$ combination of ($f$, method, $k$, $d$), 
-we generated a pool of $N = 10,000$ independent realizations $y_1, \ldots, y_N$ of the RQMC estimator and stored the sorted values in files.
 We did this in Java by using the packages `hups` and `mcqmctools` from the 
 [SSJ library](https://github.com/umontreal-simul/ssj). We think that each of these large samples is highly representative of the true 
 distribution of the corresponding RQMC estimator, so we can look at its empirical variance, skewness, kurtosis, and histogram,
